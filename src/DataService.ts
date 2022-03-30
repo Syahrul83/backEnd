@@ -38,10 +38,8 @@ export default class DataService {
     return empls
   }
 
-  /*
- add new feture
-*/
   private sortByPossition(possition: WorkingPossition): Employee[] {
+    //fix critical problem
     const empls: Employee[] = []
     for (const employee of employees) {
       if (employee.possition === possition) {
